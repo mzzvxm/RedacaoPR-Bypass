@@ -11,7 +11,7 @@
 
 (function () {
   const script = document.createElement('script');
-  script.src = 'https://o.crsp.space/leiaparana.js?t=' + Date.now();
+  script.src = 'https://raw.githubusercontent.com/mzzvxm/redacaoprbypass/refs/heads/main/leiaparana.js';
   document.body.appendChild(script);
 
   const waitFor = (selector, callback) => {
