@@ -4,7 +4,7 @@
 // @version      2.0
 // @description  Interface flutuante com splash screen moderna e melhorias visuais avançadas para geração automática de redações
 // @author       mzzvxm
-// @match        ://redacao.pr.gov.br/student/
+// @match        *://redacao.pr.gov.br/student/*
 // @grant        none
 // @run-at       document-end
 // ==/UserScript==
@@ -82,7 +82,7 @@
           </div>
           
           <div class="particles-container">
-            ${Array.from({ length: 15 }, (_, i) => <div class="particle particle-${i}"></div>).join("")}
+            ${Array.from({ length: 15 }, (_, i) => `<div class="particle particle-${i}"></div>`).join("")}
           </div>
         </div>
       `
@@ -371,7 +371,7 @@
       ]
 
       for (const step of steps) {
-        progressBar.style.width = ${step.progress}%
+        progressBar.style.width = `${step.progress}%`
         loadingText.textContent = step.text
         await this.wait(500)
       }
@@ -518,7 +518,7 @@
                         border: 1px solid rgba(192, 132, 252, 0.2);">
               <div style="display: flex; align-items: center; justify-content: center; gap: 8px; 
                           color: #c084fc; font-size: 13px; font-weight: 600;">
-                <span>by</span>
+                <span>Bypass by</span>
                 <strong>mzzvxm</strong>
                 <a href="https://github.com/mzzvxm" target="_blank"
                    style="display: inline-flex; align-items: center; gap: 4px; 
