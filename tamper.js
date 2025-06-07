@@ -4,7 +4,7 @@
 // @version      2.0
 // @description  Interface flutuante com splash screen moderna e melhorias visuais avançadas para geração automática de redações
 // @author       mzzvxm
-// @match        ://redacao.pr.gov.br/student/
+// @match        *://redacao.pr.gov.br/student/*
 // @grant        none
 // @run-at       document-end
 // ==/UserScript==
